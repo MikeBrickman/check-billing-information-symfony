@@ -1,0 +1,38 @@
+<body>
+    <form method="POST" class="ajaxForm" id="form_id" action="{{path('check_data')}}" name="CheckForm" {{ form_enctype(form) }}>
+    {#{{ form_start(form) }}#}
+    <div class="errors">
+            {{ form_errors(form) }}
+        </div>
+        <div class="card-number">
+            {{ form_label(form.cardNumber) }}
+            {{ form_errors(form.cardNumber) }}
+            {{ form_widget(form.cardNumber) }}
+        </div>
+        <div class="date">
+            {{ form_label(form.date) }}
+            {{ form_errors(form.date) }}
+            {{ form_widget(form.date) }}
+        </div>
+        <div class="cvv2">
+            {{ form_label(form.cvv2) }}
+            {{ form_errors(form.cvv2) }}
+            {{ form_widget(form.cvv2) }}
+        </div>
+        <div class="email">
+            {{ form_label(form.email) }}
+            {{ form_errors(form.email) }}
+            {{ form_widget(form.email) }}
+        </div>
+        <div class="phone">
+            {{ form_label(form.phone) }}
+            {{ form_errors(form.phone) }}
+            {{ form_widget(form.phone) }}
+        </div>
+            {{ form_rest(form) }}
+        <button type="submit">Check!</button>
+    </form>
+    {#{{ form_end(form) }}#}
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+</body>
