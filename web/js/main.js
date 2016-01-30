@@ -1,9 +1,4 @@
 $(function() {
-    //$('.ajaxForm').submit(function() {
-    //    console.log('boo');
-    //    //return true; // return false to cancel form action
-    //});
-
     $('body').on('submit', '.ajaxForm', function (e) {
 
         e.preventDefault();

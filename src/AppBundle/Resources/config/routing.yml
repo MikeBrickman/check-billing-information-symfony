@@ -5,8 +5,6 @@ homepage:
 check_data:
     pattern:  /check_data
     defaults: { _controller: AppBundle:CheckData:check }
-#    requirements:
-#        _method:  POST
 
 login:
     path:     /login
